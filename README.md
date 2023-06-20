@@ -25,4 +25,4 @@
 
 ## Setting up a project with Create React App
 
-> npx create-react-app@5 <project-name>
+> npx create-react-app@5 {project-name}
