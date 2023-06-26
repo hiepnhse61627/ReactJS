@@ -119,6 +119,37 @@
 | Updating state causes component to re-render | `Receiving new props causes component to re-render`. Usually when the parent's state has been updated |
 | Used to make components interactive          | Used by parent to configure child component ("settings")                                              |
 
+### The `THINKING IN REACT` process
+
+- Break the desired UI into `components` and establish the `component tree`.
+- Build a `static` version in React (without state)
+- Think about `state`:
+
+  1. When to use state
+  2. Types of state: local vs global
+  3. Where to place each piece of state
+
+- Establish `data flow`:
+
+  1. One-way data flow
+  2. Child-to-parent communication
+  3. Accessing global state
+
+### What is State management ?
+
+- Deciding `when` to create pieces of state, what `types` of state are necessary, `where` to place each piece of state, and how data `flows` through the app.
+
+> Giving each piece of state a `home`
+
+| Local State                                                                                                                  | Global State                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| State needed `only by one or few components`                                                                                 | State that `many components` might need                                          |
+| State that is defined in a component and `only that component and child components` have access to it (by passing via props) | `Shared` state that is accessible to `every component` in the entire application |
+
+### STATE: `WHEN` AND `WHERE`
+
+![State: `WHEN` And `WHERE`](state-when-and-where.excalidraw.png)
+
 ## Git
 
 ```
