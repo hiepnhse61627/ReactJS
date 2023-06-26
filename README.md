@@ -75,6 +75,40 @@
 - Makes applications easier to debug, as we have more control over the data.
 - More performance.
 
+### What is State ?
+
+- Data that a component can hold over time, necessary for information that it needs to remember throughout the app's lifecycle.
+- Component's memory.
+- State variable / piece of state: A single variable in a component (component state).
+- Updating component state triggers React to re-render the component.
+
+> State allows developers to:
+>
+> - Update the component's view (by re-rendering it)
+> - Persist local variables between renders
+
+> One Component, One State
+>
+> Each component has and manages its own state, no matter how many times we render the same component.
+
+> UI as a Function of state
+>
+> ` UI = f(state )`
+>
+> - With state, we view UI as a reflection of data changing over time
+> - We describe reflection of data using state, event handlers, and JSX
+
+> In PRACTICAL terms
+>
+> - Use a state varifable for any data that the component should keep track of `("remember")` over time. This is data that will change at some point. In Vanilla JS, that's let variable, or an `[]` or `{}`.
+> - Whenever you want something in the component to be dynamic, create a piece of state related to that `thing`, and update the state when the `thing` should change (aka `be dynamic`)
+>
+> Example: A modal window can be open or closed. So we create a state variable `isOpen` that tracks whether the modal is open or not. On `isOpen = true` we display the window, on `isOpen = false` we hide it.
+>
+> - If you want to change the way a component looks, or the data it displays, `update its state`. This usually happens in an `event handler` function.
+> - When building a component, imagine its view as a `reflection of state changing over time`.
+> - For data that should not trigger component re-renders, `don't use state`. Use a regular variable instead. This is a common `beginner mistake`.
+
 ## Git
 
 ```
