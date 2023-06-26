@@ -109,6 +109,16 @@
 > - When building a component, imagine its view as a `reflection of state changing over time`.
 > - For data that should not trigger component re-renders, `don't use state`. Use a regular variable instead. This is a common `beginner mistake`.
 
+### State vs Props
+
+| State                                        | Props                                                                                                 |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Internal data, owned by component            | External data, owned by parent component                                                              |
+| Component `memory`                           | Similar to function parameters                                                                        |
+| Can be updated by the component itself       | Read-only                                                                                             |
+| Updating state causes component to re-render | `Receiving new props causes component to re-render`. Usually when the parent's state has been updated |
+| Used to make components interactive          | Used by parent to configure child component ("settings")                                              |
+
 ## Git
 
 ```
