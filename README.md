@@ -150,6 +150,19 @@
 
 ![State: `WHEN` And `WHERE`](state-when-and-where.excalidraw.png)
 
+> LIFTING STATE UP
+>
+> - By `lifting state up`, we have sucessfully `shared` one piece of state with multiple components in `different positions` in the component tree
+>
+> - `Child-to-parent communication (inverse data flow)`: child updating parent state (data "flowing" up)
+
+> DERIVING STATTE
+>
+> - State that is computed from an existing piece of state or from props
+> - Just regular variables, no `useState`
+> - cart state is the `single source of truth` for this related data
+> - Works because re-rendering component will `automatically re-calculate` derived state
+
 ## Git
 
 ```
