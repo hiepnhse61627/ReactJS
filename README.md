@@ -188,6 +188,10 @@
 > -> It's completely normal that an app has components of many different sizes, including very small and huge ones.
 > ![Different Sizes and Reusability](component-sizes-and-reusability.excalidraw.png)
 
+### COMPONENT CATEGORIES
+
+![Component categories](component-categories.excalidraw.png)
+
 ## Git
 
 ```
