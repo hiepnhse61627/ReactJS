@@ -163,6 +163,31 @@
 > - cart state is the `single source of truth` for this related data
 > - Works because re-rendering component will `automatically re-calculate` derived state
 
+### COMPONENT SIZE MATTERS
+
+![Component Size Matters](component-size-matters.excalidraw.png)
+
+> The 4 criteria for splitting a UI into components:
+>
+> 1. Logical separation of content/layout.
+> 2. Reusability
+> 3. Responsibilities/complexity
+> 4. Personal coding style
+
+### FRAMEWORK: When to create a NEW COMPONENT
+
+![New Component Framework](new-component-framework.excalidraw.png)
+
+> Some more general guidelines:
+>
+> - Be aware that creating a new component `creates a new abstraction`. Abstractions have a `cost`, because `more abstractions require more mental energy` to switch back and forth between components. So try not to create new components too early.
+> - Name a component according to `what it does` or `what it displays`. Don't be afraid of using long component name.
+> - Never declare a new component `inside another component`.
+> - `Co-locate related components inside the same file`. Don't separate components into different files too early.
+>
+> -> It's completely normal that an app has components of many different sizes, including very small and huge ones.
+> ![Different Sizes and Reusability](component-sizes-and-reusability.excalidraw.png)
+
 ## Git
 
 ```
