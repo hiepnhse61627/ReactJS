@@ -201,6 +201,14 @@
 > 1. Create highly reusable and flexible components.
 > 2. Fix prop drilling (great for layouts)
 
+### COMPONENT vs INSTANCE vs ELEMENT
+
+![Component vs Instance vs Element](component-vs-instance-vs-element.excalidraw.png)
+
+### [2] RENDER PHASE
+
+![Render Phase](render-commit-phase.excalidraw.png)
+
 ## Git
 
 ```
