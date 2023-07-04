@@ -205,7 +205,7 @@
 
 ![Component vs Instance vs Element](component-vs-instance-vs-element.excalidraw.png)
 
-### [2] RENDER PHASE
+### HOW RENDERING WORKS?
 
 ![Render Phase](render-commit-phase.excalidraw.png)
 
