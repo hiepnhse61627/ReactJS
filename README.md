@@ -192,6 +192,15 @@
 
 ![Component categories](component-categories.excalidraw.png)
 
+### What is COMPONENT COMPOSITION?
+
+- Combining different components using the `children` prop (or explicitly defined props)
+
+> With COMPONENT COMPOSITION, WE CAN:
+>
+> 1. Create highly reusable and flexible components.
+> 2. Fix prop drilling (great for layouts)
+
 ## Git
 
 ```
