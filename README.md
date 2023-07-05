@@ -209,6 +209,51 @@
 
 ![Render Phase](render-commit-phase.excalidraw.png)
 
+> How DIFFING works?
+>
+> Diffing uses 2 fundamental assumptions (rules):
+>
+> 1. Two elements of different type will `produce different trees`.
+> 2. Elements with a stable key prop `stay the same accross renders`
+
+> What is the KEY prop?
+>
+> - Special prop that we use to tell the diffing algorithm that an element is `unique`
+> - Allows React to `distinguish` between multiple instances of the same component type
+> - When a key `stays the same accross renders`, the element will be kept in the DOM (even if the position in the tree changes)
+>
+> 1. `Using keys in lists`
+>
+> - When a key `changes between renders`, the element will be destroyed and a new one will be created (even if the position in the tree is the same as before)
+>
+> 1. `Using keys to reset state`
+
+### The TWO TYPES of logic in React components
+
+1. Render logic
+
+- Code that lives at the `top level` of the component function
+- Participates in `describing` how the component view looks like
+- Executed `every time` the component renders
+
+2. Event handler functions
+
+- Executed as a `consequence of the event` that the handler is listening for
+- Code that actually `does things`: update state, perform an HTTP request, read an input field, navigate to another page, etc.
+
+> RULES for render logic
+>
+> - `Components must be pure when it comes to render logic`: given the same props(input), a component instance should always return the same JSX (output)
+> - `Render logic must produce no side effects`: no interaction with the "outside world" is allowed. So, in render logic:
+>
+> 1. Do NOT perform `network request` (API calls)
+> 2. Do NOT start `timers`
+> 3. Do NOT directly `use the DOM API`
+> 4. Do NOT `mutate objects or variables` outside of the function scope
+> 5. Do NOT `update state (or refs)`: this will create an infinite loop!
+>
+> > Side effects are allowed (and encouraged) in `event handler functions!`. There is also a special hook to `register side effects` (useEffect)
+
 ## Git
 
 ```
