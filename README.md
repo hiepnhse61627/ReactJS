@@ -254,6 +254,10 @@
 >
 > > Side effects are allowed (and encouraged) in `event handler functions!`. There is also a special hook to `register side effects` (useEffect)
 
+### COMPONENT (INSTANCE) LIFECYCLE
+
+![component instance lifecycle](component-instance-lifecycle.excalidraw.png)
+
 ## Git
 
 ```
