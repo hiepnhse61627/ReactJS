@@ -258,6 +258,10 @@
 
 ![component instance lifecycle](component-instance-lifecycle.excalidraw.png)
 
+### Effects and Data Fetching
+
+![effects](effects.excalidraw.png)
+
 ## Git
 
 ```
