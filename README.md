@@ -281,10 +281,18 @@ Go to Visual Studio Code Settings, then search for the following:
 5. Diff decorations -> Change to "None" if you don't want VSCode shows changes for Git
 ```
 
-## Setting up a project with Create React App
+## Setting up a project
+
+- Create React App
 
 ```
 npx create-react-app@5 {project-name}
+```
+
+- Vite
+
+```
+npm create vite@4
 ```
 
 ## Useful Resources
