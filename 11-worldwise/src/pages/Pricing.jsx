@@ -20,7 +20,11 @@ export default function Product() {
             voluptatem iste.
           </p>
         </div>
-        <img src="img-2.jpg" alt="overview of a large city with skyscrapers" />
+        <img
+          src="img-2.jpg"
+          alt="overview of a large city with skyscrapers"
+          style={{ width: "100%" }}
+        />
       </section>
     </main>
   );
