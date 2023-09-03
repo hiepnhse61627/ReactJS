@@ -295,6 +295,43 @@ npx create-react-app@5 {project-name}
 npm create vite@4
 ```
 
+- Eslist vite
+
+```
+npm install --save-dev vite-plugin-eslint eslint-config-react-app eslint
+```
+
+- Styled components
+
+```
+npm install styled-components
+```
+
+- React Icons
+
+```
+npm i react-icons
+```
+
+- React Query + Devtools
+
+```
+npm i @tanstack/react-query@4
+npm i @tanstack/react-query-devtools
+```
+
+- React Hot Toast
+
+```
+npm i react-hot-toast
+```
+
+- React Hook Form
+
+```
+npm i react-hook-form@7
+```
+
 ## Useful Resources
 
 - [Writing Resilient Components](https://overreacted.io/writing-resilient-components/?ref=jonas.io) (By Dan Abramov from the React team)
